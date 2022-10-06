@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{% extends 'base.html' %}
+{% block title %}
+Post ma`lumotlari | {{block.super}}
+{% endblock title %}
+{% block content %}
+
+
+<center>
+   
+    <div class="col-sm-6 mt-5">
+        <div class="card">
+            <img style="height: 300px;width:100%" src="{{posts.rasm.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{posts.sarlavha}}</h5>
+                <h5 class="card-title">{{posts.malumot}}</h5>
+                <p class="card-text"><i class="fa fa-eye" style="font-size:20px">{{posts.kurishlar}}</i></p>
+                <p class="card-text"><i class="fa fa-clock-o" aria-hidden="true">{{posts.vaqt}}</i></p>
+                <a style="width: 100%;" href="/" class="btn btn-primary">Asosiy</a>
+            </div>
+        </div>
+    </div>
+</center>
+
+
+    {% endblock content %}
